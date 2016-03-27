@@ -48,6 +48,8 @@ module.exports = Testpack =
       git = git.substr(0,git.length-4)
       if emojiKey=="code" or emojiKey=="doc" or emojiKey=="tests"
         "[#{emojiMap[emojiKey]}](#{git}/commits?author=#{author})"
+      else if emojiKey=="bug"
+        "[#{emojiMap[emojiKey]}](#{git}/issues?q=author%3A#{author})"
       else
         "#{emojiMap[emojiKey]}"
 
