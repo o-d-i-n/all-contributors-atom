@@ -3,7 +3,7 @@
   'atom-text-editor': [
     {
       'label': 'Toggle testpack'
-      'command': 'testpack:toggle'
+      'command': 'testpack:transform'
     }
   ]
 'menu': [
@@ -13,8 +13,8 @@
       'label': 'testpack'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'testpack:toggle'
+          'label': 'Transform'
+          'command': 'testpack:transform'
         }
       ]
     ]
