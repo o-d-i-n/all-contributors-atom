@@ -64,7 +64,11 @@ module.exports = Testpack =
     editor = atom.workspace.getActiveTextEditor()
     currentBuffer = editor.getSelectedText()
     totalContri = currentBuffer.split('\n')
-    totalContri = (parseLine line for line in totalContri).join('\n')
+    contriLen = totalContri.length
+    totalContri = (parseLine line for line in totalContri).join(' ')
+    totalContri += "|\n"
+    totalContri += ("| :---: " for num in [contriLen..1]).join('')
+    totalContri += '|'
     editor.insertText(totalContri)
     #parseLine line for line in totalContri
     ###
