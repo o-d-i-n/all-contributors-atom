@@ -66,7 +66,7 @@ module.exports = Testpack =
     totalContri = currentBuffer.split('\n')
     contriLen = totalContri.length
     totalContri = (parseLine line for line in totalContri).join(' ')
-    totalContri += "|\n"
+    totalContri += " |\n"
     totalContri += ("| :---: " for num in [contriLen..1]).join('')
     totalContri += '|'
     editor.insertText(totalContri)
