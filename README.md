@@ -1,31 +1,53 @@
 # all-contributors-atom
 Atom package for easy implementation of all-contributors spec within atom editor
 
-### Contributors
+### Usage
+Begin with adding comments in your documentation file like this -
+```markdown
 <!-- Contributors START
-Mayank_Badola mbad0la http://mbad0la.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io code doc
-Mayank_Badola mbad0la http://mbad0la.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io code video
-Divjot_Singh bogas04 http://bogas04.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io code talks prReview
-Divjot_Singh bogas04 http://bogas04.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io code doc
-Divjot_Singh bogas04 http://bogas04.github.io prReview
-Divjot_Singh bogas04 http://bogas04.github.io tutorial
-Divjot_Singh bogas04 http://bogas04.github.io doc
-Divjot_Singh bogas04 http://bogas04.github.io bug
 Contributors END -->
 <!-- Contributors table START -->
-| [![Mayank Badola](https://avatars.githubusercontent.com/mbad0la?s=100)<br /><sub>Mayank Badola</sub>](http://mbad0la.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) | [![Mayank Badola](https://avatars.githubusercontent.com/mbad0la?s=100)<br /><sub>Mayank Badola</sub>](http://mbad0la.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) 📹 | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-
-| [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) 📢 👀 | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />👀 | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />✅ | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-
-| [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[🐛](https://github.com/o-d-i-n/all-contributors-atom/issues?q=author%3Abogas04) |
-| :---: |
 <!-- Contributors table END -->
+```
+You can also automate this in a _.md_ file through the **addcon-i** snippet.
+
+Add contributors in the project like this - 
+```markdown
+<!-- Contributors START
+fname_mname_lname githubUsername websiteLink contributionType1 contributionType2
+fname_mname_lname githubUsername websiteLink contributionType1 contributionType5 contributionType7
+fname_mname_lname githubUsername websiteLink contributionType3
+Contributors END -->
+```
+and press `ctrl+alt+o` to parse the contributors list to build contributors' table as specified in the [all-contributors spec](https://github.com/kentcdodds/all-contributors).
+
+#### Adding a contributor
+Inside the _Contributors START_ comment, start from a newline, the name of the person concatenated by underscore for breaks(eg. Mayank_Badola), his/her github username, his/her website url and all the types of contributions made by that user.  
+Make sure you seperate these details by a space character.(eg. Mayank_Badola mbad0la http://mbad0la.github.io code doc)  
+Press `ctrl+alt+o` to refresh the tables.
+
+#### Contribution Types
+Type | Represents |
+:---: | :---: 
+code | Code
+utility | Plugin/utility libraries
+tools | Tools
+infra | Infrastructure (Hosting, Build-Tools, etc)
+doc | Documentation
+translation | Translation
+answers | Answering Questions (in Issues, Stack Overflow, Gitter, Slack, etc.)
+tests | Tests
+bug | Bug reports
+example | Examples
+blogpost | Blogposts
+tutorial | Tutorials
+video | Videos
+talks | Talks
+design | Design
+prReview | Reviewed Pull Requests
+
+#### Contributors
+| [![Mayank Badola](https://avatars.githubusercontent.com/mbad0la?s=100)<br /><sub>Mayank Badola</sub>](http://mbad0la.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) |
+| :---: | :---: |
+
+Any further contributions are more than welcome to help make this utility more awesome!
