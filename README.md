@@ -11,7 +11,7 @@ Contributors END -->
 ```
 You can also automate this in a _.md_ file through the **addcon-i** snippet.
 
-Add contributors in the project like this - 
+Add contributors in the project like this -
 ```markdown
 <!-- Contributors START
 fname_mname_lname githubUsername websiteLink contributionType1 contributionType2
@@ -28,7 +28,7 @@ Press `ctrl+alt+o` to refresh the tables.
 
 #### Contribution Types
 Type | Represents |
-:---: | :---: 
+:---: | :---:
 code | Code
 utility | Plugin/utility libraries
 tools | Tools
