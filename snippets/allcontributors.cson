@@ -1,0 +1,12 @@
+'.source.gfm':
+  'addcon-init':
+    'prefix': 'addcon-i'
+    'body': """
+      <!-- Contributors START
+      Contributors END -->
+      <!-- Contributors table START -->
+      <!-- Contributors table END -->
+    """
+  'addcon-template':
+    'prefix': 'addcon-t'
+    'body': 'fname_mname_lname username website contribution1 contribution2 ...'
