@@ -62,7 +62,7 @@ module.exports = Allcontributors =
       if (num+1)%7 == 0
         strBuild += " |\n"
         strBuild += ("| :---: " for values in [7..1]).join('')
-        strBuild += '|\n'
+        strBuild += '|\n\n'
       else
         strBuild += " "
       strBuild
