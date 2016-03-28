@@ -1,13 +1,13 @@
 {
-  "name": "testpack",
-  "main": "./lib/testpack",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "name": "allcontributors",
+  "main": "./lib/allcontributors",
+  "version": "1.0.0",
+  "description": "Atom package for easy implementation of all-contributors spec within the atom editor",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "testpack:transform"
+    "atom-workspace": "allcontributors:transform"
   },
-  "repository": "https://github.com/atom/testpack",
+  "repository": "https://github.com/o-d-i-n/all-contributors-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

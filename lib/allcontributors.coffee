@@ -1,8 +1,8 @@
 # TestpackView = require './testpack-view'
 {CompositeDisposable} = require 'atom'
 
-module.exports = Testpack =
-  testpackView: null
+module.exports = Allcontributors =
+  allcontributorsView: null
   modalPanel: null
   subscriptions: null
 
@@ -14,7 +14,7 @@ module.exports = Testpack =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'testpack:transform': => @transform()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'allcontributors:transform': => @transform()
 
   deactivate: ->
     # @modalPanel.destroy()
@@ -22,7 +22,7 @@ module.exports = Testpack =
     # @testpackView.destroy()
 
   serialize: ->
-    testpackViewState: @testpackView.serialize()
+    #testpackViewState: @testpackView.serialize()
 
   transform: ->
     emojiMap =

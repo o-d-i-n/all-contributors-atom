@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle testpack'
-      'command': 'testpack:transform'
+      'label': 'Transform with allcontributors'
+      'command': 'allcontributors:transform'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'testpack'
+      'label': 'allcontributors'
       'submenu': [
         {
           'label': 'Transform'
-          'command': 'testpack:transform'
+          'command': 'allcontributors:transform'
         }
       ]
     ]
