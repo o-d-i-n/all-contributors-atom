@@ -19,12 +19,12 @@ fname_mname_lname githubUsername websiteLink contributionType1 contributionType5
 fname_mname_lname githubUsername websiteLink contributionType3
 Contributors END -->
 ```
-and press `ctrl+alt+o` to parse the contributors list to build contributors' table as specified in the [all-contributors spec](https://github.com/kentcdodds/all-contributors).
+and press `ctrl+alt+p` to parse the contributors list to build contributors' table as specified in the [all-contributors spec](https://github.com/kentcdodds/all-contributors).
 
 #### Adding a contributor
 Inside the _Contributors START_ comment, start from a newline, the name of the person concatenated by underscore for breaks(eg. Mayank_Badola), his/her github username, his/her website url and all the types of contributions made by that user.  
 Make sure you seperate these details by a space character.(eg. Mayank_Badola mbad0la http://mbad0la.github.io code doc)  
-Press `ctrl+alt+o` to refresh the tables.
+Press `ctrl+alt+p` to refresh the tables.
 
 #### Contribution Types
 Type | Represents |

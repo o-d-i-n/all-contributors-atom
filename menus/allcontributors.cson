@@ -2,7 +2,7 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Transform with allcontributors'
+      'label': 'Run allcontributors'
       'command': 'allcontributors:transform'
     }
   ]
@@ -13,7 +13,7 @@
       'label': 'allcontributors'
       'submenu': [
         {
-          'label': 'Transform'
+          'label': 'Run'
           'command': 'allcontributors:transform'
         }
       ]
