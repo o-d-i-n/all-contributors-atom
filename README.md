@@ -1,6 +1,8 @@
 # all-contributors-atom
 Atom package for easy implementation of all-contributors spec within atom editor
 
+![allcontributors.gif](allcontributors.gif)
+
 ### Usage
 Open a project using (Why? [#1](https://github.com/o-d-i-n/all-contributors-atom/issues/1))
 
