@@ -5,21 +5,14 @@ Atom package for easy implementation of all-contributors spec within atom editor
 Begin with adding comments in your documentation file like this -
 ```markdown
 <!-- Contributors START
-Contributors END -->
-<!-- Contributors table START -->
-<!-- Contributors table END -->
-```
-You can also automate this in a _.md_ file through the **addcon-i** snippet.
-
-Add contributors in the project like this -
-```markdown
-<!-- Contributors START
 fname_mname_lname githubUsername websiteLink contributionType1 contributionType2
 fname_mname_lname githubUsername websiteLink contributionType1 contributionType5 contributionType7
 fname_mname_lname githubUsername websiteLink contributionType3
 Contributors END -->
+<!-- Contributors table START -->
+<!-- Contributors table END -->
 ```
-and press `ctrl+alt+p` to parse the contributors list to build contributors' table as specified in the [all-contributors spec](https://github.com/kentcdodds/all-contributors).
+and hit `ctrl+alt+p` to parse the contributors list to build contributors' table as specified in the [all-contributors spec](https://github.com/kentcdodds/all-contributors).
 
 #### Adding a contributor
 Inside the _Contributors START_ comment, start from a newline, the name of the person concatenated by underscore for breaks(eg. Mayank_Badola), his/her github username, his/her website url and all the types of contributions made by that user.  

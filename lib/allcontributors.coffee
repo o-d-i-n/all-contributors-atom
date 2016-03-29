@@ -44,9 +44,10 @@ module.exports = Allcontributors =
       matchStr index, itr for itr in [0..textList.length-1]
       tempPoints
 
-    mapToStr = (emojiKey, author) ->
-      git = atom.project.getRepositories()[0].getOriginURL()
-      git = git.substr(0, git.length-4)
+    mapToStr = (repo, emojiKey, author) ->
+      git = repo.getOriginURL()
+      if git.substr(git.length-4,4) == ".git"
+        git = git.substr(0, git.length-4)
       if emojiKey=="code" or emojiKey=="doc" or emojiKey=="tests"
         "[#{emojiMap[emojiKey]}](#{git}/commits?author=#{author})"
       else if emojiKey=="bug"
@@ -54,11 +55,11 @@ module.exports = Allcontributors =
       else
         "#{emojiMap[emojiKey]}"
 
-    parseLine = (line, num) ->
+    parseLine = (repo, line, num) ->
       entities = line.split(' ')
       name = entities[0].split('_').join(' ')
       strBuild = "| [![#{name}](https://avatars.githubusercontent.com/#{entities[1]}?s=100)<br /><sub>#{name}</sub>](#{entities[2]})<br />"
-      strBuild += (mapToStr entity, entities[1] for entity, i in entities when i>2).join(' ')
+      strBuild += (mapToStr repo, entity, entities[1] for entity, i in entities when i>2).join(' ')
       if (num+1)%7 == 0
         strBuild += " |\n"
         strBuild += ("| :---: " for values in [7..1]).join('')
@@ -67,14 +68,22 @@ module.exports = Allcontributors =
         strBuild += " "
       strBuild
 
+    runParser = (repo) ->
+      if repo != null
+        points = findPoints docText
+        contriBufferArray = editor.getTextInBufferRange([[points[0]+1, 0], [points[1]-1, docText[points[1]-1].length]]).split('\n')
+        contriLen = contriBufferArray.length
+        totalContri = (parseLine repo, line, num for line, num in contriBufferArray).join('')
+        if contriLen%7 != 0
+          totalContri += "|\n"
+          totalContri += ("| :---: " for num in [contriLen%7..1]).join('')
+          totalContri += '|\n'
+        editor.setTextInBufferRange([[points[2]+1, 0], [points[3], 0]], totalContri)
+
     editor = atom.workspace.getActiveTextEditor()
     docText = editor.getText().split('\n')
-    points = findPoints docText
-    contriBufferArray = editor.getTextInBufferRange([[points[0]+1, 0], [points[1]-1, docText[points[1]-1].length]]).split('\n')
-    contriLen = contriBufferArray.length
-    totalContri = (parseLine line, num for line, num in contriBufferArray).join('')
-    if contriLen%7 != 0
-      totalContri += "|\n"
-      totalContri += ("| :---: " for num in [contriLen%7..1]).join('')
-      totalContri += '|\n'
-    editor.setTextInBufferRange([[points[2]+1, 0], [points[3], 0]], totalContri)
+    filePath = editor.getPath()
+    openProjects = atom.project.getDirectories()
+    activeProject = (dir for dir in openProjects when dir.contains(filePath))
+    atom.project.repositoryForDirectory(activeProject[0])
+    .then(runParser)
