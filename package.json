@@ -1,7 +1,7 @@
 {
   "name": "allcontributors",
   "main": "./lib/allcontributors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Atom package for easy implementation of all-contributors spec within the atom editor",
   "keywords": [
     "package",
