@@ -25,7 +25,6 @@ You can reduce the boilerplate to only adding contributers details by using **ad
 
 ```html
 <!-- Contributors START
->>>>>>> 7795126f2e4037df454ae59a50b6e5dec29eda6d
 Contributors END -->
 <!-- Contributors table START -->
 <!-- Contributors table END -->
