@@ -6,6 +6,7 @@
       Contributors END -->
       <!-- Contributors table START -->
       <!-- Contributors table END -->
+      This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
     """
   'addcon-template':
     'prefix': 'addcon-t'
