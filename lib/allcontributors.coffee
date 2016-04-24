@@ -32,7 +32,7 @@ module.exports = Allcontributors =
       design: "🎨"
       prReview: "👀"
 
-    strList = ["<!-- Contributors START", "Contributors END -->", "<!-- Contributors table START -->", "<!-- Contributors table END -->", "This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification."]
+    strList = ["<!-- Contributors START", "Contributors END -->", "<!-- Contributors table START -->", "<!-- Contributors table END -->"]
 
     findPoints = (textList) ->
       index = 0
