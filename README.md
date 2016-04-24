@@ -20,6 +20,7 @@ fname_mname_lname githubUsername websiteLink contributionType3
 Contributors END -->
 <!-- Contributors table START -->
 <!-- Contributors table END -->
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 ```
 Hit `ctrl+alt+p` to parse the contributors list to build contributors' table as specified in the [all-contributors spec](https://github.com/kentcdodds/all-contributors).
 
@@ -30,6 +31,7 @@ You can reduce the boilerplate to only adding contributers details by using **ad
 Contributors END -->
 <!-- Contributors table START -->
 <!-- Contributors table END -->
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 ```
 #### Adding a contributor
 Inside the _Contributors START_ comment, start from a newline, the name of the person concatenated by underscore for breaks(eg. Mayank_Badola), his/her github username, his/her website url and all the types of contributions made by that user.  
