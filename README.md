@@ -61,5 +61,6 @@ prReview | Reviewed Pull Requests
 #### Contributors
 | [![Mayank Badola](https://avatars.githubusercontent.com/mbad0la?s=100)<br /><sub>Mayank Badola</sub>](http://mbad0la.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) |
 | :---: | :---: |
+* [Tam Love](https://github.com/taml) also contributed on code and docs.
 
 Any further contributions are more than welcome to help make this utility more awesome!
