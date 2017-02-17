@@ -58,7 +58,7 @@ module.exports = Allcontributors =
     parseLine = (repo, line, num) ->
       entities = line.split(' ')
       name = entities[0].split('_').join(' ')
-      strBuild = "| [![#{name}](https://avatars.githubusercontent.com/#{entities[1]}?s=100)<br /><sub>#{name}</sub>](#{entities[2]})<br />"
+      strBuild = "| <img src=\"https://avatars.githubusercontent.com/#{entities[1]}?s=100\" width=\"100\" alt=\"#{name}\" /><br /><sub>#{name}</sub>](#{entities[2]})<br />"
       strBuild += (mapToStr repo, entity, entities[1] for entity, i in entities when i>2).join(' ')
       if (num+1)%7 == 0
         strBuild += " |\n"
